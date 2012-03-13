@@ -15,5 +15,27 @@ file in each of the directories. You can read more about how to do this here:
 
 http://blog.semmy.me/post/17390049513/streaming-twitter-with-ntwitter-and-node-js
 
+The preferred order of the examples is:
+
+echo: a really simple echo server in node
+
+http: a really simple http server in node
+
+httpplus: a more interesting http server, illustrating the non-blocking nature of node
+
+twitter: a more striking example, the http server keeps track of all the previous stuff and,
+in addition, streams data from twitter
+
+redis: the same twitter/http server, but now it also stores more info in a
+redis database
+
+socket.io: now the server also runs a socket.io server on top of the http server
+and passes messages to the client when new tweets are found containing the search
+terms
+
+express: the previous example, more organized using express and ejs
+
+
+
 
 
