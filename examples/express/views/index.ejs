@@ -1,3 +1,5 @@
 <b>Hello from Express!!</b> <br/>
-<p>Total awesome: <span id="awesome"></span></p>
-<p>Total cool: <span id="cool"></span></p>
+
+<% terms.forEach(function(term) { %>
+   <p><b><%= term %></b>: <span id='<%= term %>'>0</span></p>
+<% }); %>

@@ -1,13 +1,15 @@
-
 /**
  * Module dependencies.
  */
 
 var express = require('express');
-var routes = require('./routes');
 var io = require('socket.io');
 var redis = require('redis');
-var twitterWorker = require('./workers/twitter.js');
+var TwitterWorker = require('./workers/twitter.js');
+
+var terms = ['awesome', 'cool', 'rad', 'gnarly', 'groovy'];
+
+var t = new TwitterWorker(terms);
 
 //this redis client listens for messages
 var listener = redis.createClient();
@@ -35,7 +37,9 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/', routes.index);
+app.get('/', function(req, res) {
+    res.render('index.ejs', { terms: terms });
+});
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
