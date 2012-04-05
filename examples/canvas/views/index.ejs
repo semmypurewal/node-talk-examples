@@ -1,0 +1,9 @@
+<b>Hello from Express!!</b> <br/>
+
+<% terms.forEach(function(term) { %>
+   <p><b><%= term %></b>: <span id='<%= term %>'>0</span></p>
+<% }); %>
+
+<canvas id="pie" width="400" height="400"></canvas>
+
+<button id='restart'>Restart Counts</button>
