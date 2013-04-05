@@ -7,9 +7,7 @@ var io = require('socket.io');
 var redis = require('redis');
 var TwitterWorker = require('./workers/twitter.js');
 
-//var terms = ['awesome','cool','rad','gnarly','groovy'];
-var terms = ['romney', 'obama', 'santorum', 'gingrich'];
-//var terms = ['hello','world'];
+var terms = ['awesome','cool','rad','gnarly','groovy'];
 
 var t = new TwitterWorker(terms);
 
