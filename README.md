@@ -4,7 +4,7 @@ that includes redis and mongodb. You can read more about how to set up the Vagra
 Node.js environment by taking a look at my node-dev-bootstrap project, also available
 on github. More about that can be found here:
 
-http://blog.semmy.me/post/17222183802/node-js-getting-started-with-vagrant
+http://blog.semmy.me/post/45607300220/vagrant-1-1-0-and-node-dev-bootstrap
 
 To get the examples to work, you shouldn't have to use Vagrant -- you can install
 Node.js and Redis on your local machine and run them locally.
@@ -34,6 +34,8 @@ and passes messages to the client when new tweets are found containing the searc
 terms
 
 express: the previous example, more organized using express and ejs
+
+canvas: the express process hooked up to a canvas pie-chart generator (written by http://github.com/embeepea)
 
 
 
